@@ -1,0 +1,23 @@
+====================================================================
+FOSSEE Screening Task 3: Surrogate Modeling Results Summary
+====================================================================
+
+System: Benzene - Toluene Binary Distillation Column
+Thermodynamic Model: Peng-Robinson (PR)
+
+Dataset Size: 1,000 samples
+Input Variables (7): Feed Temp, Feed Pressure, Feed Composition, Number of Stages, Feed Stage Location, Reflux Ratio, Bottoms Rate
+Output Targets (4): xD_Benzene, xB_Toluene, Qc_kW, Qr_kW
+
+Best Surrogate Model Selected: XGBoost Regressor
+Reasoning: Superior non-linear fitting capability for phase equilibrium composition curves, eliminating underfitting seen in linear/RF models.
+
+Final Performance Metrics Summary (Best Model: XGBoost):
+--------------------------------------------------------------------
+Target Variable   | Model          | MAE      | RMSE     | R² Score
+--------------------------------------------------------------------
+xD_Benzene        | XGBoost        | 0.00198  | 0.00283  | 0.96962
+xB_Toluene        | XGBoost        | 0.00152  | 0.00288  | 0.88988
+Qc_kW             | XGBoost        | 6.10515  | 7.63813  | 0.99325
+Qr_kW             | XGBoost        | 7.30559  | 9.53726  | 0.98966
+--------------------------------------------------------------------

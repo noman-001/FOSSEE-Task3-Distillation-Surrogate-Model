@@ -1,0 +1,13 @@
+Model,Target,MAE,RMSE,R2_Score
+Linear Regression,xD_Benzene,0.00566,0.00692,0.81897
+Linear Regression,xB_Toluene,0.0046,0.00579,0.55535
+Linear Regression,Qc_kW,2.52698,3.12826,0.99887
+Linear Regression,Qr_kW,2.88983,3.70343,0.99844
+Random Forest,xD_Benzene,0.00884,0.01089,0.55186
+Random Forest,xB_Toluene,0.00363,0.00591,0.5371
+Random Forest,Qc_kW,7.68377,9.8144,0.98885
+Random Forest,Qr_kW,8.82773,11.1015,0.98599
+XGBoost,xD_Benzene,0.00198,0.00283,0.96962
+XGBoost,xB_Toluene,0.00152,0.00288,0.88988
+XGBoost,Qc_kW,6.10515,7.63813,0.99325
+XGBoost,Qr_kW,7.30559,9.53726,0.98966
